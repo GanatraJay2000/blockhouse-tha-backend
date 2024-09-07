@@ -70,3 +70,20 @@ All data is hardcoded and follows the structure expected by charting libraries.
 ## Thought Process
 
 This backend was built with simplicity in mind. The data for the charts is hardcoded to keep the focus on API integration with the Next.js frontend. The Django REST framework was used for API management because it provides quick and easy-to-use tools for serializing data and responding to client requests.
+
+## Future Scope
+
+1. **Create Chart Data Models**:
+
+   - I plan to create dedicated models for each chart type (e.g., `Candlestick`, `LineChart`, `BarChart`, `PieChart`) in the database to make the data dynamic rather than hardcoded. This will allow for the storage and management of chart data, enabling easier updates and scaling.
+
+2. **Database Integration**:
+
+   - Currently, the data is hardcoded in the views. I aim to integrate a database (e.g., PostgreSQL) to dynamically serve chart data via the API. This will make the backend more flexible, allowing for the addition and manipulation of chart data through database queries.
+
+3. **Dockerize**:
+
+   - I plan to create a `Dockerfile` and `docker-compose.yml` for the Django backend to streamline the setup and deployment process. This will ensure consistency across development and production environments, simplifying the project’s infrastructure and making it more scalable.
+
+4. **Proper Response Formatting**:
+   - I will work on improving the response format by adhering to standard API response conventions (e.g., status codes, error handling, data wrappers). This will make the API more robust and user-friendly, ensuring that data is returned in a clean and structured format with proper pagination or error messages where necessary.

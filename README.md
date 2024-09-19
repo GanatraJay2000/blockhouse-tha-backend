@@ -10,10 +10,10 @@ This is a simple Django REST API that provides hardcoded data for Candlestick, L
 
 ## Setup Instructions
 
-1. **Clone the repository**:
+1. **Clone the repository from the `extra-requirements` branch**:
 
    ```bash
-   git clone https://github.com/GanatraJay2000/blockhouse-tha-backend.git
+   git clone -b extra-requirements https://github.com/GanatraJay2000/blockhouse-tha-backend.git
    cd blockhouse-tha-backend
    ```
 
@@ -47,6 +47,7 @@ The following API endpoints are available:
 - **Line Chart Data**: `/api/line-chart-data/`
 - **Bar Chart Data**: `/api/bar-chart-data/`
 - **Pie Chart Data**: `/api/pie-chart-data/`
+- **All Data**: `/api/all-data/`
 
 All data is hardcoded and follows the structure expected by charting libraries.
 
@@ -66,6 +67,13 @@ All data is hardcoded and follows the structure expected by charting libraries.
 
 - **Django**: Web framework for building the backend.
 - **Django REST Framework**: Toolkit for building Web APIs.
+
+## Running Tests
+To run the unit tests, use the following command:
+   ```bash
+   python manage.py test
+   ```
+This will execute all the test cases and report any failures or errors. 
 
 ## Thought Process
 

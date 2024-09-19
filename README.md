@@ -2,6 +2,9 @@
 
 This is a simple Django REST API that provides hardcoded data for Candlestick, Line, Bar, and Pie charts. The API is integrated with a Next.js frontend for dynamic chart rendering.
 
+> [!NOTE]
+> Extra Features in another branch.
+
 ## Requirements
 
 - Python 3.x
